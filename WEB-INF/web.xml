@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                             https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0"
+         metadata-complete="true">
+
+    <display-name>Application zazart</display-name>
+
+<!-- Hello World Servlet -->
+    <servlet>
+        <servlet-name>HelloWorldServlet</servlet-name>
+        <servlet-class>HelloWorld</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HelloWorldServlet</servlet-name>
+        <url-pattern>/hello</url-pattern> 
+    </servlet-mapping>
+
+<!-- DownloadFileServlet -->
+    <servlet>
+        <servlet-name>DownloadFileServletTest</servlet-name>
+        <servlet-class>DownloadFileServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DownloadFileServletTest</servlet-name>
+        <url-pattern>/Download</url-pattern> 
+    </servlet-mapping>
+
+<!-- PushServerServletTest -->
+    <servlet>
+        <servlet-name>PushServerServletTest</servlet-name>
+        <servlet-class>PushServerServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>PushServerServletTest</servlet-name>
+        <url-pattern>/Push</url-pattern> 
+    </servlet-mapping>
+
+<!-- SimpleCounterServlet -->
+    <servlet>
+        <servlet-name>SimpleCounterServletTest</servlet-name>
+        <servlet-class>SimpleCounterServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SimpleCounterServletTest</servlet-name>
+        <url-pattern>/SimpleCounter</url-pattern> 
+    </servlet-mapping>
+
+<!-- InitCounterServlet -->
+    <servlet>
+        <servlet-name>InitCounterServletTest</servlet-name>
+        <servlet-class>InitCounterServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>InitCounterServletTest</servlet-name>
+        <url-pattern>/InitCounter</url-pattern> 
+    </servlet-mapping>
+    
+<!-- InitConfigFileCounterServlet -->
+    <servlet>
+        <servlet-name>InitConfigFileCounterServletTest</servlet-name>
+        <servlet-class>InitConfigFileCounterServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>InitConfigFileCounterServletTest</servlet-name>
+        <url-pattern>/InitConfigFileCounter</url-pattern> 
+    </servlet-mapping>
+
+<!-- UIFormServlet -->
+    <servlet>
+        <servlet-name>UIFormServletTest</servlet-name>
+        <servlet-class>UIFormServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UIFormServletTest</servlet-name>
+        <url-pattern>/UIForm</url-pattern>
+    </servlet-mapping>
+    
+</web-app>
